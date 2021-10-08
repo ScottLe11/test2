@@ -1,3 +1,12 @@
 .climatePic{
-    text-align:center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height:300px;
+    Width:300px;
+    
+}
+
+.textInfo{
+    text-align:center;  
 }

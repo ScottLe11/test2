@@ -32,64 +32,65 @@ page that contains all the code you need for a new page.-->
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script type="text/javascript" src="scripts/scripts.js"></script>
 
-  <form method="get">
-  <h1>This is the interactive page</h1>
-  <div class="container">
-    <h1 class="display-7   text-center">Assessing your carbon footprint</h1>
-    <div class="row border">
-      <div class="col-9 border">
-        <h2>
-          Question: On average, how many hours do you spend on the computer each day?
+  <form method="get" action="results.html">
+    <h1>This is the interactive page</h1>
+    <div class="container">
+      <h1 class="display-7   text-center">Assessing your carbon footprint</h1>
+      <div class="row border">
+        <div class="col-9 border">
+          <h2>
+            Question: On average, how many hours do you spend on the computer each day?
           </h2>
-        <br>
-        <select class="form-select form-select-lg mb-3">
-          <option>1-2</option>
-          <option>3-4</option>
-          <option>5-6</option>
-          <option>7+</option>
-        </select>
-        
-      </div>
-      <div class="col-3 border">
-        <img class="climatePic" src="https://co2living.com/wp-content/uploads/2019/02/Reduce-Your-Carbon-Footprint.jpg">
-      </div>
-    </div>
-    <br>
-    <div class="row border">
-      <div class="col-9 border">
-        <h2>
-         Question: Do you drive any type of motorized vehicle?
-        </h2>
-        <br>
-        <label for="yes">Yes: </label>
-<input type="radio" id="yes" name="Drive?" value="yes">
- <label for="no">No: </label>
- <input type="radio" id="no" name="Drive?" value="no">
-      </div>
-      <div class="col-3 border">
-        <img class="climatePic" src="https://static01.nyt.com/images/2019/08/29/climate/28cli-newsletter-onething-drive/28cli-newsletter-onething-drive-articleLarge.jpg?quality=75&auto=webp&disable=upscale">
-      </div>
-    </div>
-    <br>
-    <div class="row border">
-      <div class="col-9 border">
-        <h2>
-          List out ways you rely on energy in your life.
-        </h2>
-        <br>
-        <textarea name="name" rows="5" cols="60">
+          <br>
+          <select name="compUse" class="form-select form-select-lg mb-3">
+            <option value="little">1-2</option>
+            <option value="moderate">3-4</option>
+            <option value="a lot">5-6</option>
+            <option value="extreme">7+</option>
+          </select>
 
-        </textarea>
+        </div>
+        <div class="col-3 border">
+          <img class="climatePic"
+            src="https://co2living.com/wp-content/uploads/2019/02/Reduce-Your-Carbon-Footprint.jpg">
+        </div>
       </div>
-      <div class="col-3 border">
-        <img class="climatePic" src="https://static01.nyt.com/images/2019/04/11/smarter-living/carbonfootprint-slide-D3TJ/carbonfootprint-slide-D3TJ-jumbo.jpg">
+      <br>
+      <div class="row border">
+        <div class="col-9 border">
+          <h2>
+            Question: Do you drive any type of motorized vehicle?
+          </h2>
+          <br>
+          <label for="yesTag">Yes: </label>
+          <input type="radio" id="yesTag" name="ifDrive" value="yes">
+          <label for="noTag">No: </label>
+          <input type="radio" id="noTag" name="ifDrive?" value="no">
+        </div>
+        <div class="col-3 border">
+          <img class="climatePic"
+            src="https://static01.nyt.com/images/2019/08/29/climate/28cli-newsletter-onething-drive/28cli-newsletter-onething-drive-articleLarge.jpg?quality=75&auto=webp&disable=upscale">
+        </div>
       </div>
-    </div>
-    <br>
-    <div class="button">
-     <!-- <button type="button" class="btn btn-primary">Submit</button>-->
-     <input class="btn btn-primary" type="submit" value="Submit">
-    </div>
+      <br>
+      <div class="row border">
+        <div class="col-9 border">
+          <h2>
+            List out ways you rely on energy in your life.
+          </h2>
+          <br>
+          <textarea name="listOfEnergy" rows="5" cols="60" placeholder="Enter Here"></textarea>
+        </div>
+        <div class="col-3 border">
+          <img class="climatePic"
+            src="https://static01.nyt.com/images/2019/04/11/smarter-living/carbonfootprint-slide-D3TJ/carbonfootprint-slide-D3TJ-jumbo.jpg">
+        </div>
+      </div>
+      <br>
+      <div class="button">
+        <!-- <button type="button" class="btn btn-primary">Submit</button>-->
+        <input class="btn btn-primary" type="submit" value="Submit">
+      </div>
   </form>
 </body>
 
